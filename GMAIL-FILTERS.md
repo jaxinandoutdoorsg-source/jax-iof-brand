@@ -1,25 +1,22 @@
 # Native Gmail filters
 
-The Gmail filter API is blocked on this connector (403). Add these once in Gmail → Settings → See all settings → Filters and Blocked Addresses → Create a filter.
+API create-filter is blocked (403). Add in Gmail → Settings → Filters.
 
-Has the words can be the plus-address in To.
-
-| To | Also star? | Skip inbox? | Label |
+| To or subject | Star | Skip inbox | Label |
 |---|---|---|---|
-| jaxinandoutdoorsg+contact@gmail.com | Yes | No | JAX IOF/Contact |
-| jaxinandoutdoorsg+sponsor@gmail.com | No | No | JAX IOF/Sponsors & Collaborators |
-| jaxinandoutdoorsg+volunteer@gmail.com | Yes | No | JAX IOF/Contact |
-| jaxinandoutdoorsg+events@gmail.com | No | No | JAX IOF/Event Notices |
-| jaxinandoutdoorsg+issues@gmail.com | No | No | JAX IOF/Site Issues |
-| jaxinandoutdoorsg+ships@gmail.com | No | No | JAX IOF/Ships |
-| jaxinandoutdoorsg+grants@gmail.com | No | No | JAX IOF/Grants |
-| jaxinandoutdoorsg+donate@gmail.com | No | No | JAX IOF/Donation Acknowledgments |
-| jaxinandoutdoorsg+reach@gmail.com | No | No | JAX IOF/Reach |
-| jaxinandoutdoorsg+vendor@gmail.com | No | No | JAX IOF/Vendors |
-| jaxinandoutdoorsg+tax@gmail.com | No | No | JAX IOF/Tax Letters |
-| jaxinandoutdoorsg+security@gmail.com | No | No | JAX IOF/Security Alerts |
-| jaxinandoutdoorsg+newsletter@gmail.com | No | No | JAX IOF/Newsletter Signups |
-| jaxinandoutdoorsg+website@gmail.com | No | No | JAX IOF/Website |
-| from:(notifications@stripe.com) Jacksonville Indoor | No | No | JAX IOF/Payments |
-
-Also create subject filters for `[JAX IOF Contact]` etc. if the form cannot use plus-addresses yet.
+| +contact@ or `[JAX IOF Contact]` | Yes | No | JAX IOF/Contact |
+| +volunteer@ or `[JAX IOF Volunteer]` | Yes | No | JAX IOF/Volunteer |
+| +sponsor@ or `[JAX IOF Sponsor]` | No | No | JAX IOF/Sponsors & Collaborators |
+| +events@ or `[JAX IOF Event]` | No | No | JAX IOF/Event Notices |
+| +issues@ or `[JAX IOF Site Issues]` | No | No | JAX IOF/Site Issues |
+| +ships@ or `[JAX IOF Ships]` | No | No | JAX IOF/Ships |
+| `[JAX IOF Shop]` | No | No | JAX IOF/Shop |
+| +grants@ | No | No | JAX IOF/Grants |
+| +donate@ or `[JAX IOF Donation]` | No | No | JAX IOF/Donation Acknowledgments |
+| +reach@ or `[JAX IOF Reach]` | No | No | JAX IOF/Reach |
+| +newsletter@ or `[JAX IOF Newsletter]` | No | No | JAX IOF/Newsletter Signups |
+| +vendor@ | No | No | JAX IOF/Vendors |
+| +tax@ | No | No | JAX IOF/Tax Letters |
+| +security@ | No | No | JAX IOF/Security Alerts |
+| +website@ | No | No | JAX IOF/Website |
+| from:notifications@stripe.com Jacksonville Indoor | No | No | JAX IOF/Payments |
